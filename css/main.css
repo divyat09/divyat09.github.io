@@ -258,10 +258,6 @@ div#content-inner {
 div#content-inner p {
 	margin: 2px 0 30px 0;
 }
-p.intro:first-letter {
-	font-size: 1.4em;
-	letter-spacing: -1px;
-}
 p.copyright {
 	font-size: .65em;
 	font-family: "Times New Roman", serif;
