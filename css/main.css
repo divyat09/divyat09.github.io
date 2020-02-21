@@ -165,7 +165,7 @@ h4.side-nav{
 ul.side-nav {
 	margin: 10px 5px 10px 17px;
 	border-top: 1px solid #e9e7e7;
-	font-size: .74em;
+	font-size: .8em;
 	color: #978f7c;
 /* 	text-transform: uppercase; */
     background-color: #fff;     
@@ -239,7 +239,7 @@ h3.dateline {
 h4 {
 	margin-left: 25px;
 	margin-right: 10px;
-	text-transform: uppercase;
+/* 	text-transform: uppercase; */
 	font-weight: lighter;
 	margin-bottom: 10px;
 	font-family: "Times New Roman", serif;
