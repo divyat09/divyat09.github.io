@@ -167,7 +167,7 @@ ul.side-nav {
 	border-top: 1px solid #e9e7e7;
 	font-size: .74em;
 	color: #978f7c;
-	text-transform: uppercase;
+/* 	text-transform: uppercase; */
     background-color: #fff;     
 }
 ul.side-nav li {
