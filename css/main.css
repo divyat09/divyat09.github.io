@@ -1,341 +1,439 @@
-/* Design by STUDIO7DESIGNS.com
-Company:	Nautica X - Opensourcetemplates.org
-File:		main.css - This contains all the main styles for the website.
+/* Ubuntu, Ubuntu */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
-All the styles are separted into the following groups:
-Global Browser Reset - they make sure that all browsers start with the same default settings
-HTML, Body - for the html and body tags
-Layout - any style that defines how the site is laid out (position and size of objects)
-Nav - navigation bar
-Headings - headings like h1, h2, etc
-Text Styles - Styles for text
-Lists - unordered and ordered lists
-Forms - html forms
-Links - links
-Misc - anything that doesn't fit elsewhere
-*/
-
-/* @group Global Browser Reset */
-* {
-
-padding:0;
-
-margin:0;
-
-}
-
-h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, label, ul, ol, dl, fieldset, address { margin:20px 0; }
-
-li, dd, blockquote { margin-left: 40px; }
-
-fieldset { padding:10px; }
-
-img { border: 0px; }
-/* @end */
-
-/* @group HTML, Body */
 body {
-	text-align: center;
-	font-size: 1em;
-	font-family: Verdana, sans-serif;
-}
-/* @end */
-
-/* @group Layout */
-div#outer-wrapper {
-}
-div#inner-wrapper {
-	background: url(../images/header-bkg.gif) repeat-x;
-}
-div#content-wrapper {
-	width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-}
-div#logo {
-	background: url(../images/logo-box-bkg.gif) no-repeat;
-	width: 194px;
-	height: 225px;
-	margin-top: 4px;
-	text-align: center;
-}
-div#logo img {
-	margin-top: 85px;
-}
-div#sidebar {
-	float: left;
-	width: 210px;
-	margin-left: -50px;
-	margin-top:60px;
-
-}
-div#content {
-	float: right;
-	width: 730px;
-	margin-right: 30px;
-	display: inline;
-}
-div#content-inner {
-	margin-top: 20px;
-	padding: 1px 0;
-	background: url(../images/leaf-watermark.gif) no-repeat bottom right;
-}
-div.content-left {
-	padding: 4px;
-	width: 218px;
-	float: left;
-	display: inline;
-}
-div.content-left img {
-	border: 1px solid #fff;
-}
-div.content-left p {
-	background-color: #dc3409;
-	margin: 4px 0 0 0 !important;
-	color: #fff;
-	text-align: center;
-	font-family: "Times New Roman", serif;
-	padding: 2px;
-	font-size: 1.3em;
-	border: 1px solid #fff;
-}
-div.content-left p span {
-	font-size: .8em;
-}
-div.content-right {
-	float: left;
-	margin-left: 20px;
-	width: 484px;
-	display: inline;
-}
-div.content-full {
-	clear: both;
-	padding-top: 15px;
-}
-p.end-story-links {
-	border-bottom: 4px solid #d1b9b3;
-	margin-bottom: 15px !important;
-	font-size: .8em;
-}
-div#footer {
-	clear: both;
-	border-top: 1px solid #5e534f;
-	
-	padding: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
-img.content-img {
-	float: left;
-	border: 2px solid #ccc;
-	margin: 0 10px 10px 0;
+a,
+a:hover {
+  color: #a00;
+  text-decoration: none;
 }
 
-/* @end */
-
-/* @group Nav */
-ul#nav {
-	margin: 0 0 20px 0;
-	height: 40px;
-	line-height: 45px;
-	font-size: 1.2em;
-	font-family: "Times New Roman", serif;
-	overflow: hidden;
-}
-ul#nav li {
-	display: inline;
-	list-style-type: none;
-	text-transform: uppercase;
-	margin: 0 20px 0 0;
-}
-ul#nav li a:link, ul#nav li a:visited {
-	color: #7d7257;
-	color: #202020;
-	text-decoration: none;
-}
-ul#nav li a:hover {
-	color: #3f3e3a;
-	color:#26466D;
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
 }
 
-h4.side-nav{
-    font-size: 1.4em;
-    color:#26466D;
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
-ul.side-nav {
-	margin: 10px 5px 10px 17px;
-	border-top: 1px solid #e9e7e7;
-	font-size: 0.8em;
-	color: #978f7c;
-/* 	text-transform: uppercase; */
-    background-color: #fff;     
-}
-ul.side-nav li {
-	margin: 0;
-	list-style-type: none;
-	padding: 1px 0;
-}
-ul.side-nav li a {
-	display: block;
-	border-bottom: 1px solid #e9e7e7;
-	margin: 0;
-	padding: 10px 0 10px 20px;
-	/*background: url(../images/side-nav-bullet.gif) no-repeat 5px 50%;*/
-
-}
-ul.side-nav li a:link, ul.side-nav li a:visited {
-	color: #978f7c;
-	color:#202020;
-	text-decoration: none;
-}
-ul.side-nav li a:hover {
-	/*background: url(../images/side-nav-bullet-light.gif) no-repeat 5px 50% #f6f5f0;*/
-	color: #cac6ba;
-	color:#26466D;
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
-ul#footer-nav {
-	font-family: "Times New Roman", serif;
-	font-size: 1.0em;
-	color: #5e534f;
-	height: 35px;
-	margin: 0 0 10px 0;
+hr {
+  display: none;
+  height: 1px;
+  border: 0;
+  /* border-top: 1px solid #ccc; */
+  margin: 1rem 0;
+  padding: 0;
 }
-ul#footer-nav li {
-	display: inline;
-	margin: 0;
-	padding: 0 10px 0 5px;
-	border-right: 1px solid #958d83;
-}
-ul#footer-nav li.last {
-	border-right: none;
-}
-ul#footer-nav li a:link, ul#footer-nav li a:visited {
-	color: #5e534f;
-	color:#202020;
-	text-decoration: none;
-}
-ul#footer-nav li a:hover {
-	color: #453e3b;
-	color:#26466D;
-}
-/* @end */
 
-/* @group Headings */
-h1 { }
+audio,
+canvas,
+img,
+video {
+  width: 100%;
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+blockquote {
+  margin-left: 1rem;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-family: Georgia, bitstream charter, serif;
+  border-left: 3px solid;
+  border-color: #a00;
+  padding-left: 20px;
+}
+
+blockquote cite {
+  font-size: 70%;
+  opacity: 0.8;
+}
+span {
+    display: block;
+}
+
+a,
+a:hover {
+  color: #a00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Ubuntu, raleway, sans-serif;
+  line-height: 1.2;
+  color: #330;
+  font-weight: 100;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
 h2 {
-	margin: 0 0 0 0;
-	font-family: "Times New Roman", serif;
-	font-weight: lighter;
-	font-size: 1.8em;
-	color: #464031;
+  font-size: 2rem;
 }
-h3.dateline {
-	font-size: .8em;
-	font-weight: lighter;
-	color: #dc3409;
-	margin: 0 0 10px 0;
+
+h3 {
+  font-size: 1.6rem;
 }
+
 h4 {
-	margin-left: 25px;
-	margin-right: 10px;
-/* 	text-transform: uppercase; */
-	font-weight: lighter;
-	margin-bottom: 10px;
-	font-family: "Times New Roman", serif;
-	color: #a1a09b;
-}
-h5 { }
-h6 { }
-/* @end */
-
-/* @group Text Styles */
-div#content-inner {
-	font-size: 0.8em;
-	color: #929291;
-	line-height: 1.7em;
-}
-div#content-inner p {
-	margin: 2px 0 30px 0;
-}
-p.copyright {
-	font-size: .65em;
-	font-family: "Times New Roman", serif;
-	color: #797069;
-	text-transform: uppercase;
-	margin: 10px 0;
-}
-/* @end */
-
-/* @group Lists */
-	
-/* @end */
-
-/* @group Forms */
-form#search-form {
-	/*width: 150px;*/
-	float: right;
-	margin: 4px 0 0 0;
-	border-right: 1px solid #736749;
-	border-left: 1px solid #736749;
-	border-bottom: 1px solid #736749;
-}
-form#search-form input.txt {
-	width: 140px;
-	/*border: 1px solid #736749;*/
-	/*border-top: 4px solid #635534;*/
-	border: none;
-	margin: 0;
-	padding: 4px;
-	background-color: #dbd6c9;
-	color: #fff;
-	text-transform: uppercase;
-}
-/* @end */
-
-/* @group Links - link visited hover active */
-div#content-inner a:link, div#content-inner a:visited {
-	color: #8b7f73;
-	text-decoration: none;
-	border-bottom: 1px dotted #8b7f73;
-}
-div#content-inner a:hover {
-	color: #706153;
-	border-bottom: 1px dotted #706153;
+  font-size: 1.2rem;
 }
 
-p.end-story-links a:link, p.end-story-links a:visited {
-	color: #8b7f73;
-	text-decoration: none;
-	border-bottom: none !important;
+h5 {
+  font-weight: 300;
+  font-size: 1rem;
 }
 
-p.copyright a:link, p.copyright a:visited {
-	color: #797069;
-	text-decoration: none;
-}
-p.copyright a:hover {
-	color: #453e3b;
-}
-/* @end */
-
-/* @group Misc */
-.clear {
-	clear: both;
-}
-.clearfix:after {
-    content: "."; 
-    display: block; 
-    height: 0; 
-    clear: both; 
-    visibility: hidden;
+h6 {
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 
-.clearfix {display: inline-block;}
+.container {
+  max-width: 800px;
+}
 
-/* Hides from IE-mac \*/
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
-/* End hide from IE-mac */
-/* @end */
+ul {
+  padding-left: 15px;
+}
+
+ul.flat {
+  margin: 0;
+  padding: 0;
+}
+
+ul.flat li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 0;
+}
+
+.prevent-collapse {
+  min-height: 0.1rem;
+}
+
+.page-title {
+  margin: 0;
+}
+
+.smaller {
+  font-size: 70%;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+.introduction ul li {
+  margin-bottom: 10px;
+}
+
+.introduction ul li p {
+  display: inline;
+}
+
+.highlight pre {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 20px;
+  background-color: #fafafa !important;
+}
+
+.highlight {
+  background: 0 0;
+}
+
+.wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.header {
+  margin-bottom: 20px;
+  /* padding-bottom: 20px; */
+}
+
+.header .profile_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30%;
+  height: auto;
+  border-radius: 50%;
+  /* float: left; */
+}
+
+.header h1,
+.header h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  line-height: 1.3em;
+}
+
+.header h2 {
+  font-size: 1.125rem;
+}
+
+.header nav {
+  margin-top: 20px;
+  /* border-top: 1px solid #f4f4f4; */
+}
+
+.header nav ul,
+.header nav li {
+  margin: 0;
+}
+
+.header nav ul.flat {
+  padding: 0;
+}
+
+.header nav ul.flat li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.header .site-affilation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .site-affilation .email {
+  /* color: #a00; */
+  font-size: 14px;
+  display: block;
+  font-family: "Ubuntu Mono";
+  font-weight: bolder;
+}
+
+.header .site-affilation .position {
+  /* color: #a00; */
+  /* font-size: 14px; */
+  /* display: block; */
+  font-family: Ubuntu;
+  /* font-weight: bolder; */
+}
+
+.header .site-affilation nav {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.header .site-affilation nav ul svg {
+  max-height: 15px;
+}
+
+/* header for projects */
+.header .logo {
+  display: block;
+  margin-top: 2%;
+  margin-bottom: -2%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 10%;
+  height: auto;
+}
+
+.page_title {
+  font-family: Ubuntu;
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin-top: 10%;
+  display: block;
+}
+
+.page_meta {
+  display: block;
+  font-family: "Ubuntu Mono";
+  font-size: 14px;
+}
+
+.page_meta_icon {
+  font-weight: .5em;
+}
+
+.email {
+  /* color: #a00; */
+  font-size: 16px;
+  font-family: "Ubuntu Mono";
+  font-weight: bolder;
+}
+
+.collaborators {
+  font-size: 15px;
+  margin-left: .9em;
+  margin-top: .1em;
+}
+
+.year {
+  font-size: 20px;
+  margin-bottom: -.6em;
+}
+
+.project {
+  margin: .5em -.5em 0em;
+}
+
+.publications {
+  margin-left: -.5em;
+}
+
+.code_blog {
+    font-family: "Ubuntu Mono";
+    font-size: 14px;
+    margin: 0em .9em 0em;
+}
+
+.blog_cv {
+    font-family: "Ubuntu Mono";
+    font-size: 17px;
+    /* margin: 0em .9em 0em; */
+}
+
+.project_description {
+ margin: .5em .9em 0em;
+}
+
+.section .section-header {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.recent-posts .posts .introduction {
+  margin-bottom: 30px;
+}
+
+.recent-posts .posts .introduction .meta,
+.introduction .introduction-header .meta,
+.list .posts .introduction .meta {
+  font-size: 0.725rem;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.introduction .introduction-header {
+  margin-bottom: 30px;
+}
+
+.introduction .introduction-header .title {
+  margin: 0;
+}
+
+.introduction .introduction-header .meta {
+  padding-left: 5px;
+  margin-top: 10px;
+}
+
+.list .posts .introduction .meta {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.footer {
+  text-align: right;
+  font-size: 0.75em;
+  color: #999;
+  border-top: 1px solid #f4f4f4;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.page-title {
+  margin-bottom: 0;
+}
+
+.tag-cloud {
+  margin-top: 20px;
+}
+
+.tag-cloud a {
+  margin-right: 15px;
+}
+
+
+
+@media (max-width: 767px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .container {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
