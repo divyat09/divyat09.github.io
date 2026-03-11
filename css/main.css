@@ -337,6 +337,9 @@ ul {
 .blog_cv {
     font-family: "Ubuntu Mono";
     font-size: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateY(-3.2px);
     /* margin: 0em .9em 0em; */
 }
 
